@@ -1,0 +1,441 @@
+https://codesandbox.io/s/o73gkb?file=/src/styles.css:0-6869
+
+https://o73gkb.csb.app/
+
+
+
+import React from "react";
+import ReactDom from "react-dom";
+import imagePath from "/src/abrar1.jpg";
+import "./styles.css";
+
+function Hi() {
+  return (
+    <div id="mainDiv">
+      <div id="leftSideDiv">
+        <div id="aboutMe">
+          <div id="imageMe">
+            <img src={imagePath} alt="imge not found" />
+          </div>
+          <div id="abouthead" className="headings">
+            <h1>About Me</h1>
+          </div>
+          <div id="aboutDescriotion">
+            <p>
+              Hello this is me Abrar ul Hassan from karachi pakistand. Do you
+              know how to speak fulenty english i know and teach you if you are
+              interested i will teach u just in two mint. ok if you are
+              interested dm me quickly More about me:
+              abrarulhassan970@gmail.com/ 03032033694
+            </p>
+          </div>
+        </div>
+        <div id="skills">
+          <div id="abouthead" className="headings">
+            <h1>Skills</h1>
+          </div>
+          <ul>
+            <div id="attention" className="listmenu" className="listmenu">
+              <li>Attention</li>
+              <div className="range" className="range">
+                <div id="ranges1">60%</div>
+              </div>
+            </div>
+            <div id="Creativity" className="listmenu" class="listmenu">
+              <li>Creativity</li>
+              <div className="range" className="range">
+                <div id="ranges2">70%</div>
+              </div>
+            </div>
+            <div id="Positivity" className="listmenu" class="listmenu">
+              <li>Positivity-</li>
+              <div className="range" class="range">
+                <div id="ranges3">80%</div>
+              </div>
+            </div>
+            <div id="Descipline" className="listmenu" class="listmenu">
+              <li>Desciplan</li>
+              <div className="range" class="range">
+                <div id="ranges4">90%</div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div id="language">
+          <div id="languageheading" className="headings">
+            <h1>Languages</h1>
+          </div>
+          <div id="languagesBox">
+            <div id="English" className="lang">
+              <p>English</p>
+            </div>
+            <div id="Urdu" className="lang">
+              <p>Urdu</p>
+            </div>
+            <div id="Sindhi" className="lang">
+              <p>Sindhi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rightSideDiv">
+        {/* right sidie start from here */}
+        <div id="headingName">
+          <h1>Abrar ul Hassan</h1>
+          <p>Front End Developer</p>
+        </div>
+        <div id="workExperince">
+          <h1>Work Exerinces </h1>
+          <div id="juniorDevelopers">
+            <h2>Junior Developer</h2>
+            <hr />
+            <p>22-3-1982 Present</p>
+            <hr />
+            <p>
+              This is me Abrar ul Hassan i am junior Web developer you can talk
+              me i will guide you related to projects i have many projects but
+              some of them are uploaded on gihub
+            </p>
+            <div id="developerDescip">
+              <h2>Achievement</h2>
+              <ul>
+                <li>Worked on many Projects</li>
+                <li>Achieve the Sneior many thingd</li>
+                <li>Good work and best team</li>
+                <li>performance get better before</li>
+              </ul>
+            </div>
+            <div id="universityProj">
+              <h2>University Project</h2>
+              <hr />
+              <p>11-3-2019</p>
+              <hr />
+              <p>
+                This is me Abrar ul Hassan i am junior Web developer you can
+                talk me i will guide you related to projects i have many
+                projects but some of them are uploaded on gihub
+              </p>
+              <div id="projectTitle">
+                <h2>Projects</h2>
+                <ul>
+                  <li>Bakery Management System</li>
+                  <li>Transport Management System</li>
+                  <li>Phone Book</li>
+                  <li>Railway Management System</li>
+                </ul>
+              </div>
+            </div>
+            <div id="internship">
+              <h2>Internship</h2>
+              <hr />
+              <p>11-3-2019</p>
+              <hr />
+              <p>
+                This is me Abrar ul Hassan i am junior Web developer you can
+                talk me i will guide you related to projects i have many
+                projects but some of them are uploaded on gihub
+              </p>
+              <div id="SoftwareHouse">
+                <h2>Software House</h2>
+                <ul>
+                  <li>A-0 Zero Versiom</li>
+                  <li>Zero to Hero</li>
+                  <li>Phanit Hksladjkas</li>
+                  <li>Human Help software</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDom.render(<Hi />, document.querySelector("#root"));
+============================================================
+==========================================================
+csss
+============* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#imageMe img {
+  width: 70%;
+  height: 30vh;
+  border-radius: 55%;
+  padding: 10px;
+}
+
+#imageMe {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.headings {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#mainDiv {
+  display: flex;
+  padding: 10px 20% 10px 20%;
+}
+#leftSideDiv {
+  background-color: lavender;
+  border: 1px solid black;
+  border-radius: 10px 0px 0px 0px;
+  padding: 10px;
+  box-shadow: 2px 3px 2px gray;
+  width: 44%;
+}
+#rightSideDiv {
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 0px;
+  width: 50%;
+  box-shadow: 2px 3px 2px gray;
+  background-color: hotpink;
+}
+#leftSideDiv:hover,
+#rightSideDiv:hover {
+  opacity: 0.8;
+}
+#aboutDescriotion {
+  background-color: lightblue;
+  border-radius: 4%;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#skills ul {
+  background-color: lightblue;
+  margin: 5px 0px 5px 0px;
+  border-radius: 4%;
+  padding: 10px 0px 10px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#skills ul li {
+  margin: 8px;
+}
+.range {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 30px;
+  height: 25px;
+  margin: 5px;
+  background-color: white;
+}
+#ranges1 {
+  width: 60%;
+  background-color: cornflowerblue;
+  border-radius: 30px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#ranges2 {
+  width: 70%;
+  background-color: cornflowerblue;
+  border-radius: 30px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#ranges3 {
+  width: 80%;
+  background-color: cornflowerblue;
+  border-radius: 30px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#ranges4 {
+  width: 89%;
+  background-color: cornflowerblue;
+  border-radius: 40px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.listmenu {
+  display: flex;
+}
+#languagesBox {
+  padding-left: 10px;
+  padding: 30px;
+  background-color: lightblue;
+  margin: 10px 0px 10px 0px;
+  border-radius: 4%;
+}
+#English {
+  width: 40%;
+  height: 17vh;
+  text-align: center;
+  border: 6px solid black;
+  border-bottom-color: cornflowerblue;
+  border-right-color: cornflowerblue;
+  border-radius: 200px;
+  margin: 10px 0px 30px 30%;
+}
+#Urdu {
+  width: 40%;
+  height: 17vh;
+  text-align: center;
+  border: 6px solid black;
+  border-top-color: cornflowerblue;
+  border-bottom-color: cornflowerblue;
+  border-right-color: cornflowerblue;
+  border-radius: 200px;
+  margin: 10px 0px 30px 30%;
+}
+#Sindhi {
+  width: 40%;
+  height: 17vh;
+  text-align: center;
+  border: 6px solid black;
+  border-top-color: cornflowerblue;
+  border-bottom-color: cornflowerblue;
+  border-right-color: cornflowerblue;
+  border-left-color: cornflowerblue;
+  border-radius: 200px;
+  margin: 10px 0px 30px 30%;
+}
+#English p {
+  margin: 27px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#Urdu p {
+  margin: 40px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#Sindhi p {
+  margin: 30px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*----------Left SideBar Complete---------*/
+#rightSideDiv {
+  padding: 1%;
+}
+#headingName {
+  margin-top: 30px;
+}
+#headingName h1 {
+  text-align: center;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#headingName p {
+  text-align: center;
+  padding: 7px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#workExperince {
+  padding: 20px;
+}
+#workExperince h1 {
+  padding: 13px 0px 13px 0px;
+}
+
+#juniorDevelopers h2 {
+  padding: 13px 0px 13px 0px;
+}
+#juniorDevelopers p {
+  background-color: lavender;
+  border-radius: 10%;
+  box-shadow: 2px 3px 10px lightslategray;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+  word-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#developerDescip h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#developerDescip ul {
+  padding: 0px 0px 0px 20px;
+}
+#developerDescip li {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#universityProj {
+  margin: 8px 0px 2px 0px;
+  padding: 3px;
+}
+#universityProj h2 {
+  padding: 10px 0px 10px 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#universityProj p {
+  background-color: lavender;
+  border-radius: 10%;
+  box-shadow: 2px 3px 10px lightslategray;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+  word-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#universityProj ul {
+  padding: 0px 0px 0px 20px;
+}
+#universityProj li {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* #internship{
+  padding: 10px 0px 10px 0px;
+}
+#internship h2{
+  padding: 10px 0px 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#internship p{
+  background-color: lavender;
+  border-radius: 5%;
+  box-shadow: 2px 3px 10px lightslategray;
+  text-align: center;
+  font-size: 5px;
+  padding: 5px 5px 5px 5px;
+  word-spacing: 1px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}*/
+#SoftwareHouse h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#SoftwareHouse ul {
+  padding: 0px 0px 0px 20px;
+}
+#SoftwareHouse li {
+  padding: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+===========================================
